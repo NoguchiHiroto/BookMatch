@@ -15,6 +15,14 @@
 		624C97BA2BF1B0EA006AE8C0 /* BookMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C97B92BF1B0EA006AE8C0 /* BookMatchTests.swift */; };
 		624C97C42BF1B0EB006AE8C0 /* BookMatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C97C32BF1B0EB006AE8C0 /* BookMatchUITests.swift */; };
 		624C97C62BF1B0EB006AE8C0 /* BookMatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C97C52BF1B0EB006AE8C0 /* BookMatchUITestsLaunchTests.swift */; };
+		624C97D52BF1BD2E006AE8C0 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 624C97D42BF1BD2E006AE8C0 /* AppIcon.png */; };
+		624C97D62BF1BD2E006AE8C0 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 624C97D42BF1BD2E006AE8C0 /* AppIcon.png */; };
+		624C97D72BF1BD2E006AE8C0 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 624C97D42BF1BD2E006AE8C0 /* AppIcon.png */; };
+		624C97DF2BF1EF24006AE8C0 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C97DE2BF1EF24006AE8C0 /* Header.swift */; };
+		624C97E92BF21D25006AE8C0 /* バリアント2.png in Resources */ = {isa = PBXBuildFile; fileRef = 624C97E82BF21D25006AE8C0 /* バリアント2.png */; };
+		624C97EE2BF23C6B006AE8C0 /* variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C97ED2BF23C6B006AE8C0 /* variables.swift */; };
+		624C97F02BF24793006AE8C0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C97EF2BF24793006AE8C0 /* HomeView.swift */; };
+		624C97F32BF2492A006AE8C0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C97F22BF2492A006AE8C0 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,12 @@
 		624C97BF2BF1B0EB006AE8C0 /* BookMatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookMatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		624C97C32BF1B0EB006AE8C0 /* BookMatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMatchUITests.swift; sourceTree = "<group>"; };
 		624C97C52BF1B0EB006AE8C0 /* BookMatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		624C97D42BF1BD2E006AE8C0 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		624C97DE2BF1EF24006AE8C0 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		624C97E82BF21D25006AE8C0 /* バリアント2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "バリアント2.png"; sourceTree = "<group>"; };
+		624C97ED2BF23C6B006AE8C0 /* variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = variables.swift; sourceTree = "<group>"; };
+		624C97EF2BF24793006AE8C0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		624C97F22BF2492A006AE8C0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,7 @@
 		624C97A32BF1B0E7006AE8C0 /* BookMatch */ = {
 			isa = PBXGroup;
 			children = (
+				624C97D22BF1BA69006AE8C0 /* View */,
 				624C97A42BF1B0E7006AE8C0 /* BookMatchApp.swift */,
 				624C97A62BF1B0E7006AE8C0 /* ContentView.swift */,
 				624C97A82BF1B0E7006AE8C0 /* Item.swift */,
@@ -130,8 +145,69 @@
 			children = (
 				624C97C32BF1B0EB006AE8C0 /* BookMatchUITests.swift */,
 				624C97C52BF1B0EB006AE8C0 /* BookMatchUITestsLaunchTests.swift */,
+				624C97D42BF1BD2E006AE8C0 /* AppIcon.png */,
+				624C97D82BF1BD58006AE8C0 /* New Group */,
 			);
 			path = BookMatchUITests;
+			sourceTree = "<group>";
+		};
+		624C97D22BF1BA69006AE8C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				624C97EC2BF23C56006AE8C0 /* common */,
+				624C97D32BF1BB83006AE8C0 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		624C97D32BF1BB83006AE8C0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				624C97D92BF1BD60006AE8C0 /* components */,
+				624C97EF2BF24793006AE8C0 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		624C97D82BF1BD58006AE8C0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		624C97D92BF1BD60006AE8C0 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				624C97F12BF24910006AE8C0 /* Profile */,
+				624C97E22BF1F15D006AE8C0 /* Header */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		624C97E22BF1F15D006AE8C0 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				624C97DE2BF1EF24006AE8C0 /* Header.swift */,
+				624C97E82BF21D25006AE8C0 /* バリアント2.png */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		624C97EC2BF23C56006AE8C0 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				624C97ED2BF23C6B006AE8C0 /* variables.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		624C97F12BF24910006AE8C0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				624C97F22BF2492A006AE8C0 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +316,8 @@
 			files = (
 				624C97AE2BF1B0EA006AE8C0 /* Preview Assets.xcassets in Resources */,
 				624C97AB2BF1B0EA006AE8C0 /* Assets.xcassets in Resources */,
+				624C97D52BF1BD2E006AE8C0 /* AppIcon.png in Resources */,
+				624C97E92BF21D25006AE8C0 /* バリアント2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624C97D62BF1BD2E006AE8C0 /* AppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624C97D72BF1BD2E006AE8C0 /* AppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624C97DF2BF1EF24006AE8C0 /* Header.swift in Sources */,
+				624C97F32BF2492A006AE8C0 /* ProfileView.swift in Sources */,
+				624C97F02BF24793006AE8C0 /* HomeView.swift in Sources */,
+				624C97EE2BF23C6B006AE8C0 /* variables.swift in Sources */,
 				624C97A72BF1B0E7006AE8C0 /* ContentView.swift in Sources */,
 				624C97A92BF1B0E7006AE8C0 /* Item.swift in Sources */,
 				624C97A52BF1B0E7006AE8C0 /* BookMatchApp.swift in Sources */,
@@ -435,6 +519,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BookMatch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -466,6 +551,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BookMatch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -489,6 +575,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85CA55SU46;
@@ -509,6 +596,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85CA55SU46;
@@ -528,6 +616,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85CA55SU46;
@@ -546,6 +635,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85CA55SU46;
