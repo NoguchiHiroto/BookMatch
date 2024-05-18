@@ -9,15 +9,12 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-//        GeometryReader { ge
-            VStack {
-                Spacer().frame(height: screenHeightRatio * 45)
-                HeaderView()
-                Spacer().frame(height: screenHeightRatio * 18.29)
-                ProfileView()
-                Spacer()
-            }
-//        }
+        VStack {
+            Spacer().frame(height: screenHeightRatio * 45)
+            HeaderView()
+            ProfileView()
+            Spacer()
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 

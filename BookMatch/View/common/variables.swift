@@ -7,7 +7,22 @@
 
 import Foundation
 import SwiftUI
-
+//extension Color {
+//    init(hex: String) {
+//        let scanner = Scanner(string: hex)
+//        _ = scanner.scanString("#")
+//        
+//        var rgbValue: UInt64 = 0
+//        scanner.scanHexInt64(&rgbValue)
+//        
+//        let red = Double((rgbValue & 0xFF0000) >> 16) / 255.0
+//        let green = Double((rgbValue & 0x00FF00) >> 8) / 255.0
+//        let blue = Double(rgbValue & 0x0000FF) / 255.0
+//        let alpha = hex.count > 7 ? Double((rgbValue & 0xFF000000) >> 24) / 255.0 : 1.0
+//        
+//        self.init(.sRGB, red: red, green: green, blue: blue, opacity: alpha)
+//    }
+//}
 private var baseWidth = 390
 private var baseHeight = 844
 let screenSize = UIScreen.main.bounds.size
@@ -15,7 +30,7 @@ var screenWidth = screenSize.width
 var screenHeight = screenSize.height
 var screenWidthRatio = screenWidth / getBaseWidth()
 var screenHeightRatio = screenHeight / getBaseHeight()
-
+let numOfPhotos = 5;
 func getBaseWidth() ->CGFloat{
     return CGFloat(baseWidth)
 }
