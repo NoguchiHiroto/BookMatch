@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "logo.jpg",
+      "filename" : "likeBook_01.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "logo@2x.jpg",
+      "filename" : "likeBook_01@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "logo@3x.jpg",
+      "filename" : "likeBook_01@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
