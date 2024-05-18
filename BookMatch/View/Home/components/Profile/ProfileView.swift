@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ProfileView: View {
-    @State private var imgIndex = 0
+    @State private var imgIndex = 1;
     let profileImgs: [String] = ["kitaoka01","kitaoka02","kitaoka03","kitaoka04","kitaoka05",]
     
     var body: some View {
@@ -52,19 +52,29 @@ struct ProfileView: View {
                                     Spacer();
                                     HStack {
                                         Spacer().frame(width: screenWidthRatio * 12);
-                                        Text("name").font(.system(size: screenWidthRatio * 24)).bold(); Spacer().frame(width: screenWidthRatio * 30); Text("age").font(.system(size: screenWidthRatio * 24)).bold(); Spacer();
+                                        Text("北岡直紀")
+                                            .font(.system(size: screenWidthRatio * 24))
+                                            .bold();
+                                        Spacer()
+                                            .frame(width: screenWidthRatio * 30);
+                                        Text("23")
+                                            .font(.system(size: screenWidthRatio * 24))
+                                            .bold();
+                                        Spacer();
                                     };
                                     Spacer().frame(height: screenHeightRatio * 20);
                                     HStack {
                                         Spacer().frame(width: screenWidthRatio * 10);
-                                        Image(systemName: "mappin.and.ellipse").symbolRenderingMode(.palette)
+                                        Image(systemName: "mappin.and.ellipse")
+                                            .symbolRenderingMode(.palette)
                                             .foregroundStyle(
                                                 .linearGradient(
                                                     colors: [.red, .yellow, .green],
                                                     startPoint: .topLeading,
                                                     endPoint: .bottomTrailing
                                                 )
-                                            ).font(.system(size: 30));
+                                            )
+                                            .font(.system(size: 30));
                                         Spacer().frame(width: screenWidthRatio * 5);
                                         Text("距離").font(.system(size: screenWidthRatio * 20)).bold();
                                         Spacer().frame(width: screenWidthRatio * 10);
@@ -83,7 +93,39 @@ struct ProfileView: View {
                                         Text("神奈川県").font(.system(size: screenWidthRatio * 14)).bold();
                                         Spacer()
                                     }
-                                default: Text("ERROR!!!!")
+                            case 1:
+                                Spacer();
+                                HStack {
+                                    Spacer().frame(width: screenWidthRatio * 27);
+                                    Text("星の王子様").font(.system(size: screenWidthRatio * 40)).bold();
+                                    Spacer();
+                                }
+                                Spacer().frame(height: screenHeightRatio * 13);
+                                HStack {
+                                    Spacer().frame(width: screenWidthRatio * 27);
+                                    Text("サン＝テグジュペリ")
+                                        .font(.system(size: screenWidthRatio * 40)).bold()
+//                                        .foregroundColor(.white);
+                                    Spacer();
+                                }
+                                Spacer().frame(height: screenHeightRatio * 20);
+                                HStack {
+                                    Spacer().frame(width: screenWidthRatio * 12);
+                                    Text("北岡直紀")
+                                        .font(.system(size: screenWidthRatio * 24))
+                                        .bold();
+                                    Spacer()
+                                        .frame(width: screenWidthRatio * 30);
+                                    Text("23")
+                                        .font(.system(size: screenWidthRatio * 24))
+                                        .bold();
+                                    Spacer();
+                                };
+                                Spacer().frame(height: screenHeightRatio * 23);
+                                HStack {
+                                    Text("北岡直紀です。技術に情熱を燃やし、常に新しいことに挑戦しています。").font(.system(size: screenWidthRatio * 22)).bold();
+                                }
+                            default: Text("ERROR!!!!")
                             }
                         }
                     }
