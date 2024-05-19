@@ -23,6 +23,9 @@
 		624C97EE2BF23C6B006AE8C0 /* variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C97ED2BF23C6B006AE8C0 /* variables.swift */; };
 		624C97F02BF24793006AE8C0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C97EF2BF24793006AE8C0 /* HomeView.swift */; };
 		624C97F32BF2492A006AE8C0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C97F22BF2492A006AE8C0 /* ProfileView.swift */; };
+		E088C3532BF9DC6B00B32B21 /* FirstProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088C3522BF9DC6B00B32B21 /* FirstProfile.swift */; };
+		E088C3562BF9DF5E00B32B21 /* SecondProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088C3552BF9DF5E00B32B21 /* SecondProfile.swift */; };
+		E088C3592BF9E14000B32B21 /* ThirdProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088C3582BF9E14000B32B21 /* ThirdProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		624C97ED2BF23C6B006AE8C0 /* variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = variables.swift; sourceTree = "<group>"; };
 		624C97EF2BF24793006AE8C0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		624C97F22BF2492A006AE8C0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E088C3522BF9DC6B00B32B21 /* FirstProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProfile.swift; sourceTree = "<group>"; };
+		E088C3552BF9DF5E00B32B21 /* SecondProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondProfile.swift; sourceTree = "<group>"; };
+		E088C3582BF9E14000B32B21 /* ThirdProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,9 +211,20 @@
 		624C97F12BF24910006AE8C0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E088C3542BF9DF4400B32B21 /* components */,
 				624C97F22BF2492A006AE8C0 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		E088C3542BF9DF4400B32B21 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				E088C3522BF9DC6B00B32B21 /* FirstProfile.swift */,
+				E088C3552BF9DF5E00B32B21 /* SecondProfile.swift */,
+				E088C3582BF9E14000B32B21 /* ThirdProfile.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,7 +367,10 @@
 				624C97EE2BF23C6B006AE8C0 /* variables.swift in Sources */,
 				624C97A72BF1B0E7006AE8C0 /* ContentView.swift in Sources */,
 				624C97A92BF1B0E7006AE8C0 /* Item.swift in Sources */,
+				E088C3562BF9DF5E00B32B21 /* SecondProfile.swift in Sources */,
+				E088C3532BF9DC6B00B32B21 /* FirstProfile.swift in Sources */,
 				624C97A52BF1B0E7006AE8C0 /* BookMatchApp.swift in Sources */,
+				E088C3592BF9E14000B32B21 /* ThirdProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
