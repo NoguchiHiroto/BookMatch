@@ -40,7 +40,10 @@ struct SecondProfile: View {
         Spacer().frame(height: screenHeightRatio * 23);
         HStack {
             Spacer().frame(width: screenWidthRatio * 23);
-            Text("北岡直紀です。芸術に情熱を燃やし、常に新しいことに挑戦しています。").font(.system(size: screenWidthRatio * 22)).bold();
+            Text("北岡直紀です。芸術に情熱を燃やし、常に新しいことに挑戦しています。")
+            .font(.system(size: screenWidthRatio * 22))
+            .bold()
+            .fixedSize(horizontal: false, vertical: true);
         }
       }
     }

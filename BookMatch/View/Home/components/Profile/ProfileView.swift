@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ProfileView: View {
-  @State private var imgIndex = 2;
+  @State private var imgIndex = 3;
   let profileImgs: [String] = ["kitaoka01","kitaoka02","loading","kitaoka04","kitaoka05",]
   
   var body: some View {
@@ -39,6 +39,8 @@ struct ProfileView: View {
                         SecondProfile();
                       case 2:
                         ThirdProfile();
+                      case 3:
+                        FourthProfile();
                       default: Text("ERROR!!!!")
                     }
                   }
@@ -46,6 +48,7 @@ struct ProfileView: View {
                 Spacer()
                 
             }
+//        プロフィール画面をタップしたら場所に応じて写真が遷移
           HStack {
             Color.clear
               .contentShape(Rectangle())
