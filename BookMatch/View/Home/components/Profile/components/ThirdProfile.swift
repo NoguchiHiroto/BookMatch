@@ -100,17 +100,57 @@ struct ThirdProfile: View {
                         VStack {
                           HStack {
                             CircleImageWithText(imageName: "likeBook_02", size: 180, title: "ライ麦畑で捕まえて", author: "J.D.サリンジャー").padding(.leading, 23)
-//                            Spacer();
+                            //                            Spacer();
                           }
                         }
-                        
-                        
+                        VStack {
+                          Spacer();
+                          HStack {
+                            Spacer().frame(width: screenWidthRatio * 22);
+                            Text("北岡直紀")
+                              .font(.system(size: screenWidthRatio * 24))
+                              .bold();
+                            Spacer()
+                              .frame(width: screenWidthRatio * 30);
+                            Text("23")
+                              .font(.system(size: screenWidthRatio * 24))
+                              .bold();
+                            Spacer();
+                          };
+                          Spacer().frame(height: screenHeightRatio * 23);
+                          HStack {
+                            Text("好きなジャンル")
+                              .font(.system(size: screenWidthRatio * 14))
+//                              .bold()
+                              .fixedSize(horizontal:false, vertical:true)
+                              .frame(width: screenWidth * 0.4)
+                              
+                            Text("ミステリー")
+                              .font(.system(size: screenWidthRatio * 14))
+//                              .bold()
+                              .fixedSize(horizontal:false, vertical:true)
+                              
+                              
+                            Spacer()
+                          }
+                          HStack {
+                            
+                            Text("好きな著者")
+                              .font(.system(size: screenWidthRatio * 14))
+//                              .bold()
+                              .fixedSize(horizontal:false, vertical:true)
+                              .frame(width: screenWidth * 0.4)
+                            Text("東野圭吾")
+                              .font(.system(size: screenWidthRatio * 14))
+//                              .bold()
+                              .fixedSize(horizontal:false, vertical:true)
+                            Spacer()
+                          }
+                        }
                       }
-                      
-                      
                     }
-                    
                   }
+                  
                   Spacer();
                 }
             }
